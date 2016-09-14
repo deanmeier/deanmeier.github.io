@@ -1,0 +1,149 @@
+/* Animations.css */
+@-webkit-keyframes img-out {
+    0% {-webkit-transform: translateY(0%);}
+    25% {-webkit-transform: translateY(-10%);}
+    100% {-webkit-transform: translateY(100%);}
+}
+.img-out {
+    -webkit-animation: img-out 0.5s cubic-bezier(1,-0.25,.95,.97) forwards;
+}
+
+@-webkit-keyframes img-in {
+    0% {-webkit-transform: translateY(100%);}
+    75% {-webkit-transform: translateY(-5%);}
+    100% {-webkit-transform: translateY(0%);}
+}
+.img-in {
+    -webkit-animation: img-in 0.5s cubic-bezier(.37,.45,.07,1.3) 0.5s forwards;
+}
+
+
+
+/* button hover animations */
+#img1-to-img5-button, 
+#img1-to-img2-button,
+#img2-to-img1-button,
+#img2-to-img3-button,
+#img3-to-img2-button,
+#img3-to-img4-button,
+#img4-to-img3-button,
+#img4-to-img5-button,
+#img5-to-img4-button,
+#img5-to-img1-button {
+    -webkit-transition: all 0.1s linear;
+}
+#img1-to-img5-button:hover, 
+#img1-to-img2-button:hover,
+#img2-to-img1-button:hover,
+#img2-to-img3-button:hover,
+#img3-to-img2-button:hover,
+#img3-to-img4-button:hover,
+#img4-to-img3-button:hover,
+#img4-to-img5-button:hover,
+#img5-to-img4-button:hover,
+#img5-to-img1-button:hover {
+    background-color: #1E1E20;
+    border: solid 2px white;
+    cursor: pointer;
+}
+#img1-to-img5-button:hover p, 
+#img1-to-img2-button:hover p,
+#img2-to-img1-button:hover p,
+#img2-to-img3-button:hover p,
+#img3-to-img2-button:hover p,
+#img3-to-img4-button:hover p,
+#img4-to-img3-button:hover p,
+#img4-to-img5-button:hover p,
+#img5-to-img4-button:hover p,
+#img5-to-img1-button:hover p {
+    color: white;
+}
+@-webkit-keyframes arrow-left {
+    0% {-webkit-transform: translateX(0px);}
+    50% {-webkit-transform: translateX(-1px);}
+    100% {-webkit-transform: translateX(1px);}
+}
+.to-the-left:hover p {
+    -webkit-animation: arrow-left 0.3s ease-in-out infinite;
+}
+
+
+@-webkit-keyframes arrow-right {
+    0% {-webkit-transform: translateX(0px);}
+    50% {-webkit-transform: translateX(1px);}
+    100% {-webkit-transform: translateX(-1px);}
+}
+.to-the-right:hover p {
+    -webkit-animation: arrow-right 0.3s ease-in-out infinite;
+}
+
+
+
+/* image content animations */
+@-webkit-keyframes text-out {
+    from {-webkit-transform: translateX(0px); opacity: 1;}
+    to {-webkit-transform: translateX(-30px); opacity: 0;}
+}
+.header-out {
+    -webkit-animation: text-out 0.2s ease-in-out forwards;
+}
+.subheader-out {
+    -webkit-animation: text-out 0.2s ease-in-out 0.1s forwards;
+}
+.paragraph-out {
+    -webkit-animation: text-out 0.2s ease-in-out 0.2s forwards;
+}
+
+
+@-webkit-keyframes text-in {
+    from {-webkit-transform: translateX(30px); opacity: 0;}
+    to {-webkit-transform: translateX(0px); opacity: 1;}
+}
+.header-in {
+    -webkit-animation: text-in 0.2s ease-in-out forwards;
+    -moz-animation: text-in 0.2s ease-in-out forwards;
+    -o-animation: text-in 0.2s ease-in-out forwards;
+    animation: text-in 0.2s ease-in-out forwards;
+}
+.subheader-in {
+    -webkit-animation: text-in 0.2s ease-in-out 0.1s forwards;
+    -moz-animation: text-in 0.2s ease-in-out 0.1s forwards;
+    -o-animation: text-in 0.2s ease-in-out 0.1s forwards;
+    animation: text-in 0.2s ease-in-out 0.1s forwards;
+}
+.paragraph-in {
+    -webkit-animation: text-in 0.2s ease-in-out 0.2s forwards;
+    -moz-animation: text-in 0.2s ease-in-out 0.2s forwards;
+    -o-animation: text-in 0.2s ease-in-out 0.2s forwards;
+    animation: text-in 0.2s ease-in-out 0.2s forwards;
+}
+
+
+
+/* image hover effects */
+#right img:hover {
+    cursor: pointer;
+    border: solid 1px white;
+}
+
+
+/* panels animate in */
+@-webkit-keyframes left-panel-in {
+    from {-webkit-transform: translateY(-100%);}
+    to {-webkit-transform: translateY(0%);}
+}
+
+
+@-webkit-keyframes right-panel-in {
+    from {-webkit-transform: translateX(100%);}
+    to {-webkit-transform: translateX(0%);}
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,646 @@
+/* Main.css */
+
+@font-face {
+    src: url(assets/fonts/Anders.ttf);
+    font-family: Anders;
+}
+@font-face {
+    src: url(assets/fonts/Metropolis1920.otf);
+    font-family: Metropolis;
+}
+@font-face {
+    src: url(assets/fonts/Streamster.ttf);
+    font-family: Streamster;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    /*background-color: #77654D;*/
+    background-color: #12393B;
+    overflow: hidden;
+    -webkit-transition: background-color 0.5s ease-in-out;
+}
+
+#left {
+    width: 35%;
+    height: 100%;
+    background-color: #1E1E20;
+    float: left;
+    box-shadow: 10px 0px 10px rgba(0,0,0,0.6);
+    outline: 2px solid white;
+    position: relative;
+    
+    -webkit-transform: translateY(-100%);
+    
+    -webkit-animation: left-panel-in 0.7s ease-out 0.3s forwards;
+}
+
+
+
+#logo {
+    width: auto;
+    height: 100px;
+}
+#logo #D {
+    font-size: 5em;
+    color: white;
+    font-family: Anders;
+    float: left;
+    margin-left: 25px;
+    margin-right: 2px;
+    
+    -webkit-transform: skew(10deg);
+    -moz-transform: skew(10deg);
+    -o-transform: skew(10deg);
+    transform: skew(10deg);
+    
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    
+    text-shadow: -1px 0px 1px #C9283E, -2px 0px 1px #C9283E, -3px 0px 1px #C9283E, -4px 0px 1px #C9283E, -5px 0px 1px #C9283E;
+}
+#logo #ean {
+    font-size: 3em;
+    color: white;
+    font-family: Anders;
+    float: left;
+    margin-top: 35px;
+    
+    -webkit-transform: translateX(-3px) skew(-10deg);
+    -moz-transform: translateX(-3px) skew(-10deg);
+    -o-transform: translateX(-3px) skew(-10deg);
+    transform: translateX(-3px) skew(-10deg);
+    
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    
+    text-shadow: -1px 0px 1px #C9283E, -2px 0px 1px #C9283E, -3px 0px 1px #C9283E, -4px 0px 1px #C9283E, -5px 0px 1px #C9283E;
+    overflow: hidden;
+}
+#logo #ean p {
+    -webkit-transform: translateX(-300px);
+    
+    -webkit-transition: all 0.4s ease-out;
+}
+#logo #D:hover {
+    -webkit-transform: skew(-10deg);
+    text-shadow: 1px 0px 1px #C9283E, 2px 0px 1px #C9283E, 3px 0px 1px #C9283E, 4px 0px 1px #C9283E, 5px 0px 1px #C9283E;
+    cursor: default;
+}
+#logo #D:hover ~ #ean p {
+    -webkit-transform: translateX(0px);
+}
+
+
+
+#nav-container {
+    width: 100%;
+    height: 250px;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: absolute; 
+}
+#nav {
+    width: 100%;
+    height: 50px;
+    position: relative;
+}
+#nav-items {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* This starts the slide show buttons/button container 1 */
+#button-container-1 {
+    width: 90px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 5;
+}
+#img1-to-img5-button {
+    width: 40px;
+    height: 40px;
+    background-color: #ECF0F1;
+    border-radius: 5px;
+    float: left;
+    margin-right: 10px;
+    
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;    
+    box-sizing: border-box;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    box-shadow: 0px 0px 5px 1px rgba(255,255,255,0.4);
+}
+#img1-to-img2-button {
+    width: 40px;
+    height: 40px;
+    background-color: #ECF0F1;
+    border-radius: 5px;
+    float: left;
+    
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;    
+    box-sizing: border-box;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    box-shadow: 0px 0px 5px 1px rgba(255,255,255,0.4);
+}
+
+/* button container 2 */
+#button-container-2 {
+    width: 90px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 1;
+}
+#img2-to-img1-button {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 5px;
+    float: left;
+    margin-right: 10px;
+    
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;    
+    box-sizing: border-box;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+#img2-to-img3-button {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 5px;
+    float: left;
+    
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;    
+    box-sizing: border-box;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+/* button container 3 */
+#button-container-3 {
+    width: 90px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 1;
+}
+#img3-to-img2-button {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 5px;
+    float: left;
+    margin-right: 10px;
+    
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;    
+    box-sizing: border-box;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+#img3-to-img4-button {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 5px;
+    float: left;
+    
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;    
+    box-sizing: border-box;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+/* button container 4 */
+#button-container-4 {
+    width: 90px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 1;
+}
+#img4-to-img3-button {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 5px;
+    float: left;
+    margin-right: 10px;
+    
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;    
+    box-sizing: border-box;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+#img4-to-img5-button {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 5px;
+    float: left;
+    
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;    
+    box-sizing: border-box;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+/* button container 4 */
+#button-container-5 {
+    width: 90px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 1;
+}
+#img5-to-img4-button {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 5px;
+    float: left;
+    margin-right: 10px;
+    
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;    
+    box-sizing: border-box;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+#img5-to-img1-button {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 5px;
+    float: left;
+    
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;    
+    box-sizing: border-box;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+
+.to-the-left p {
+    margin-top: -2px;
+    margin-left: -5px;
+    color: #1E1E20;
+}
+.to-the-right p {
+    margin-top: -2px;
+    margin-left: 3px;
+    color: #1E1E20;
+}
+
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* This begins the image content styles section */
+#image-content-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#image-content-container h1 {
+    width: 80%;
+    color: white;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: left;
+    font-family: Anders;
+    margin-top: 10px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5), 2px 2px 1px rgba(0,0,0,0.5), 3px 3px 1px rgba(0,0,0,0.5);
+}
+#image-content-container h2 {
+    width: 80%;
+    color: white;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: left;
+    font-family: Anders;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5), 2px 2px 1px rgba(0,0,0,0.5), 3px 3px 1px rgba(0,0,0,0.5);
+}
+#image-content-container p {
+    color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 80%;
+    font-family: Raleway;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5), 2px 2px 1px rgba(0,0,0,0.5), 3px 3px 1px rgba(0,0,0,0.5);
+    font-size: 1.3em;
+    margin-top: 5px;
+    
+}
+
+/* image1-content styles */
+#image1-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+/* image2-content styles */
+#image2-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#image2-content h1 {
+    opacity: 0;
+}
+#image2-content h2 {
+    opacity: 0;
+}
+#image2-content p {
+    opacity: 0;
+}
+/* image3-content styles */
+#image3-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#image3-content h1 {
+    opacity: 0;
+}
+#image3-content h2 {
+    opacity: 0;
+}
+#image3-content p {
+    opacity: 0;
+}
+/* image4-content styles */
+#image4-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#image4-content h1 {
+    opacity: 0;
+}
+#image4-content h2 {
+    opacity: 0;
+}
+#image4-content p {
+    opacity: 0;
+}
+/* image5-content styles */
+#image5-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#image5-content h1 {
+    opacity: 0;
+}
+#image5-content h2 {
+    opacity: 0;
+}
+#image5-content p {
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#right {
+    width: 65%;
+    height: 100%;
+    float: left;
+    position: relative;
+    
+    -webkit-transform: translateX(100%);
+    
+    -webkit-animation: right-panel-in 0.7s ease-out 0.3s forwards;
+}
+#right img {
+    -webkit-transition: all 0.2s ease-in-out;
+}
+#image-1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+#image-1 img {
+    width: 90%;
+    height: auto;
+    box-shadow: 6px 6px 10px rgba(0,0,0,0.4);
+    position: absolute;
+}
+
+#image-2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    -webkit-transform: translateY(100%);
+}
+#image-2 img {
+    width: 90%;
+    height: auto;
+    box-shadow: 6px 6px 10px rgba(0,0,0,0.4);
+}
+
+#image-3 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    -webkit-transform: translateY(100%);
+}
+#image-3 img {
+    width: 90%;
+    height: auto;
+    box-shadow: 6px 6px 10px rgba(0,0,0,0.4);
+}
+
+#image-4 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    -webkit-transform: translateY(100%);
+}
+#image-4 img {
+    width: 90%;
+    height: auto;
+    box-shadow: 6px 6px 10px rgba(0,0,0,0.4);
+}
+
+#image-5 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    -webkit-transform: translateY(100%);
+}
+#image-5 img {
+    width: 90%;
+    height: auto;
+    box-shadow: 6px 6px 10px rgba(0,0,0,0.4);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media (max-width: 1100px) {
+    #left {
+        width: 100%;
+        height: 50%;
+    }
+    #right{
+        width: 100%;
+        height: 50%;
+    }
+   #right img {
+        height: 90%; 
+        width: auto;
+    }
+    
+    
+}
+
+@media (max-width: 768px) {
+    #right img {
+        height: 85%;
+        width: 95%;
+    }
+}
+
+@media (max-width: 640px) {
+    #right img {
+        height: 70%;
+        width: 95%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Just to hold this here */
