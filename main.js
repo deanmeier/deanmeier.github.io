@@ -1,5 +1,62 @@
-// Main.js 
+/* Main.js */
 $(document).ready(function() {
+    $("#to-1").click(function() {
+        $("#box-container").css({"-webkit-transform": "translateX(0%)"}); 
+    });
+    
+    $("#to-2").click(function() {
+        $("#box-container").css({"-webkit-transform": "translateX(-25%)"}); 
+    });
+    
+    $("#to-3").click(function() {
+        $("#box-container").css({"-webkit-transform": "translateX(-50%)"}); 
+    });
+    
+    $("#to-4").click(function() {
+        $("#box-container").css({"-webkit-transform": "translateX(-75%)"}); 
+    });
+    
+    // Projects container up and down
+    $("#title2-container").click(function() {
+        $("#past-projects").css({"-webkit-transform": "translateY(-100%)"});
+        $("header").css({"-webkit-transform": "translateY(-100%)"});
+    });
+    
+    $("#project-up").click(function() {
+        $("header").css({"-webkit-transform": "translateY(0%)"});
+        $("#past-projects").css({"-webkit-transform": "translateY(0%)"});
+    });
+    
+    // Pricing container up and down
+    $("#pricing-box").click(function() {
+        $("#pricing").css({"-webkit-transform": "translateY(-100%)"});
+        $("header").css({"-webkit-transform": "translateY(-100%)"});
+    });
+    $("#pricing-up").click(function() {
+        $("#pricing").css({"-webkit-transform": "translateY(0%)"});
+        $("header").css({"-webkit-transform": "translateY(0%)"});
+    });
+    
+    
+    /* header nav items */
+    $("#to-1").click(function() {
+        $(this).css("border", "solid 1px #A8282B");
+        $("#to-2, #to-3, #to-4").css("border", "solid 15px #A8282B");
+    });
+    $("#to-2").click(function() {
+        $(this).css("border", "solid 1px #A8282B");
+        $("#to-1, #to-3, #to-4").css("border", "solid 15px #A8282B");
+    });
+    $("#to-3").click(function() {
+        $(this).css("border", "solid 1px #A8282B");
+        $("#to-1, #to-2, #to-4").css("border", "solid 15px #A8282B");
+    });
+    $("#to-4").click(function() {
+        $(this).css("border", "solid 1px #A8282B");
+        $("#to-1, #to-2, #to-3").css("border", "solid 15px #A8282B");
+    });
+    /* end header items */
+    
     //beginning of the slide show button animations and whatnot 
     $("#img1-to-img5-button").click(function() {
       $("#image-1").removeClass("img-in");
@@ -255,20 +312,11 @@ $(document).ready(function() {
     });
     
     
-    $("#img1").click(function() {
-       $("#vid1").css("visibility", "inherit");
-    });
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
 });
+
+
+

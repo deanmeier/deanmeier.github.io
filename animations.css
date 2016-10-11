@@ -1,4 +1,37 @@
 /* Animations.css */
+#to-1:hover,
+#to-2:hover,
+#to-3:hover,
+#to-4:hover {
+    border: solid 1px #A8282B; 
+}
+
+
+/* project animations */
+@-webkit-keyframes arrow-bounce {
+    0%, 100% {
+        -webkit-transform: translateY(0px);
+    }
+    50% {
+        -webkit-transform: translateY(-3px);
+    }
+}
+#project-up:hover {
+    -webkit-transform: translateY(-3px);
+    -moz-transform: translateY(-3px);
+    -o-transform: translateY(-3px);
+    transform: translateY(-3px);
+    
+    -webkit-animation: none;
+    -moz-animation: none;
+    -o-animation: none;
+    animation: none;
+}
+
+
+
+
+/* project animations */
 @-webkit-keyframes img-out {
     0% {-webkit-transform: translateY(0%);}
     25% {-webkit-transform: translateY(-10%);}
@@ -129,15 +162,107 @@
 
 /* panels animate in */
 @-webkit-keyframes left-panel-in {
-    from {-webkit-transform: translateY(-100%);}
-    to {-webkit-transform: translateY(0%);}
+    from {-webkit-transform: translateX(-100%);}
+    to {-webkit-transform: translateX(0%);}
 }
 
 
 @-webkit-keyframes right-panel-in {
-    from {-webkit-transform: translateX(100%);}
-    to {-webkit-transform: translateX(0%);}
+    0% {-webkit-transform: translateY(100%);}
+    75% {-webkit-transform: translateY(-5%);}
+    100% {-webkit-transform: translateY(0%);}
 }
+
+
+
+
+/* loader animations */
+@-webkit-keyframes square1 {
+    0% {
+        -webkit-transform: rotate(45deg); 
+        opacity: 0;
+    }
+    40% {
+        -webkit-transform: rotate(405deg); 
+        opacity: 1;
+    }
+    41%, 50% {
+        -webkit-transform: rotate(405deg); 
+        opacity: 0;
+    }
+    92% {
+        -webkit-transform: rotate(-45deg); 
+        opacity: 1;
+    }
+    93%, 100% {
+        -webkit-transform: rotate(-45deg); 
+        opacity: 0;
+    }
+}
+#square1 {
+    -webkit-animation: square1 2s linear infinite;
+}
+#square2 {
+    -webkit-animation: square1 2s linear 0.05s infinite;
+}
+#square3 {
+    -webkit-animation: square1 2s linear 0.1s infinite;
+}
+#square4 {
+    -webkit-animation: square1 2s linear 0.15s infinite;
+}
+#square5 {
+    -webkit-animation: square1 2s linear 0.2s infinite;
+}
+#square6 {
+    -webkit-animation: square1 2s linear 0.25s infinite;
+}
+#square7 {
+    -webkit-animation: square1 2s linear 0.3s infinite;
+}
+#square8 {
+    -webkit-animation: square1 2s linear 0.35s infinite;
+}
+#square9 {
+    -webkit-animation: square1 2s linear 0.4s infinite;
+}
+#square10 {
+    -webkit-animation: square1 2s linear 0.45s infinite;
+}
+#square11 {
+    -webkit-animation: square1 2s linear 0.5s infinite;
+}
+
+@-webkit-keyframes loader-out {
+    0% {opacity: 1; visibility: visible;}
+    99% {opacity: 0; visibility: visible;}
+    100% {opacity: 0; visibility: hidden;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
