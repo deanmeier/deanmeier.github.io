@@ -915,7 +915,7 @@ nav {
 }
 
 
-/* media queries */
+/* media queries for projects*/
 @media (max-width: 1100px) {
     #left {
         width: 100%;
@@ -956,6 +956,8 @@ nav {
     height: 100%;
     background-color: #374140;
     position: absolute;
+    
+    -webkit-transform: translateY(-100%);
     
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -1000,16 +1002,14 @@ nav {
 
 
 #price-table-container {
-    width: 1000px;
-    height: 500px;
+    width: 1400px;
+    height: 700px;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     position: absolute;
     margin: auto;
-    
-    -webkit-transform: scale(1.4);
 }
 #pricing-disclaimer {
     text-align: center;
@@ -1051,14 +1051,16 @@ nav {
     box-sizing: border-box;
     box-shadow: -3px -3px 1px rgba(0,0,0,0.3) inset, 3px -3px 1px rgba(0,0,0,0.3) inset, 3px 3px 1px rgba(0,0,0,0.3) inset;
     position: relative;
+    padding-left: 20px;
+    
 }
 #starter-info p {
-    text-align: center;
     color: white;
     font-family: Julius Sans One;
     font-size: 0.8em;
     margin-top: 30px;
     text-shadow: -1px 1px 1px #2980B9, -2px 2px 1px #2980B9;
+    font-size: 1.5em;
 }
 #starter-price {
     position: absolute;
@@ -1076,6 +1078,7 @@ nav {
     text-shadow: -1px 1px 1px #FF4138, -2px 2px 1px #FF4138, -3px 3px 1px #FF4138; 
     font-size: 2em;
     margin-top: 10px;
+    text-align: center;
 }
 
 
@@ -1109,14 +1112,15 @@ nav {
     box-sizing: border-box;
     box-shadow: -3px -3px 1px rgba(0,0,0,0.3) inset, 3px -3px 1px rgba(0,0,0,0.3) inset, 3px 3px 1px rgba(0,0,0,0.3) inset;
     position: relative;
+    padding-left: 20px;
 }
 #business-info p {
-    text-align: center;
     color: white;
     font-family: Julius Sans One;
     font-size: 0.8em;
     margin-top: 30px;
     text-shadow: -1px 1px 1px #2980B9, -2px 2px 1px #2980B9;
+    font-size: 1.5em;
 }
 #business-price {
     position: absolute;
@@ -1134,6 +1138,7 @@ nav {
     text-shadow: -1px 1px 1px #FF4138, -2px 2px 1px #FF4138, -3px 3px 1px #FF4138; 
     font-size: 2em;
     margin-top: 10px;
+    text-align: center;
 }
 
 
@@ -1167,14 +1172,15 @@ nav {
     box-sizing: border-box;
     box-shadow: -3px -3px 1px rgba(0,0,0,0.3) inset, 3px -3px 1px rgba(0,0,0,0.3) inset, 3px 3px 1px rgba(0,0,0,0.3) inset;
     position: relative;
+    padding-left: 20px;
 }
 #premium-info p {
-    text-align: center;
     color: white;
     font-family: Julius Sans One;
     font-size: 0.8em;
     margin-top: 30px;
-    text-shadow: -1px 1px 1px black, -2px 2px 1px black;
+    text-shadow: -1px 1px 1px #2980B9, -2px 2px 1px #2980B9;
+    font-size: 1.5em;
 }
 #premium-price {
     position: absolute;
@@ -1192,6 +1198,85 @@ nav {
     text-shadow: -1px 1px 1px #FF4138, -2px 2px 1px #FF4138, -3px 3px 1px #FF4138; 
     font-size: 2em;
     margin-top: 10px;
+    text-align: center;
+}
+
+/* media queries for price table */
+@media (max-width: 1366px) and (max-height: 768px){
+    #price-table-container {
+        width: 1200px;
+        height: 550px;
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 1280px)and (max-height: 1024px) {
+    #price-table-container {
+        width: 1200px;
+        height: 650px;
+    }
+}
+
+@media (max-width: 1280px) and (max-height: 800px) {
+    #price-table-container {
+        width: 1200px;
+        height: 600px;
+    }
+}
+@media (max-width: 1024px) and (max-height: 768px) {
+    #price-table-container {
+        width: 1000px;
+        height: 600px;
+    }
+}
+@media (max-width: 768px) and (max-height: 1280px) {
+    #price-table-container {
+        width: 750px;
+        height: 800px;
+    }
+    #starter-info p {
+        font-size: 1.3em;
+    }
+    #starter-price p {
+        font-size: 2em;
+    }
+    #business-info p {
+        font-size: 1.3em;
+    }
+    #business-price p {
+        font-size: 2em;
+    }
+    #premium-info p {
+        font-size: 1.3em;
+    }
+    #premium-price p {
+        font-size: 2em;
+    }
+}
+@media (max-width: 640px) and (max-height: 960px) {
+    #price-table-container {
+        width: 630px;
+        height: 700px;
+    } 
+      #starter-info p {
+        font-size: 1.1em;
+    }
+    #starter-price p {
+        font-size: 2em;
+    }
+    #business-info p {
+        font-size: 1.1em;
+    }
+    #business-price p {
+        font-size: 2em;
+    }
+    #premium-info p {
+        font-size: 1.1em;
+    }
+    #premium-price p {
+        font-size: 2em;
+    }
+    
 }
 
 
