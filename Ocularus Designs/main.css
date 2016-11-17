@@ -1,0 +1,203 @@
+/* main css file */
+* {
+    margin: 0;
+    padding: 0;
+}
+html, 
+body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background-color: white;
+}
+header {
+    width: 100%;
+    height: 45%;
+    background: url(images/design.jpg) center bottom fixed;
+    background-size: cover;
+}
+#initials {
+    width: 50px;
+    height: 50px;
+    background-color: #E74C3C;
+    margin: 20px;
+    position: fixed;
+    color: white;
+    font-size: 13pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poiret One";
+    border: solid 2px white;
+    
+    -webkit-transform: rotate(45deg);
+}
+#initials h1 {
+    -webkit-transform: rotate(-45deg);
+}
+
+
+#about {
+    width: 100%;
+    height: auto;
+    background-color: #1E1E20;
+}
+#outer-logo {
+    width: 130px;
+    height: 130px;
+    background-color: #2A2C2B;
+    border: solid 6px #1E1E20;
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin: auto;
+    margin-top: -68px;
+    
+    -webkit-transform: rotate(45deg);
+}
+#logo-container {
+    width: 130px;
+    height: 130px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin: auto;
+    
+    -webkit-transform: rotate(-45deg);
+}
+
+#logo-container .square-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+#logo-container .square {
+    border: solid 2px white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+#text-container {
+    width: 100%;
+    height: 100%;
+    padding-top: 95px;
+    padding-bottom: 30px;
+}
+#company-name {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: "Poiret One";
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+#name {
+    color: #E74C3C;
+} 
+.tiny-bar {
+    width: 150px;
+    height: 2px;
+    background-color: white;
+    left; 0;
+    right: 0;
+    margin: auto;
+    margin-bottom: 5px;
+}
+.short-bar {
+    width: 200px;
+    height: 2px;
+    background-color: white;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-bottom: 5px;
+}
+.med-bar {
+    width: 250px;
+    height: 2px;
+    background-color: white;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-bottom: 5px;
+}
+.long-bar {
+    width: 300px;
+    height: 2px;
+    background-color: white;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-bottom: 5px;
+}
+#subheader {
+    color: white;
+    font-family: "Poiret One";
+    width: 450px;
+    height: auto;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+#works {
+    width: 100%;
+    height: 100%;
+    background-color: #2A2C2B;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,16 @@
+/* css animation file */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotateY(0deg);
+    }
+    50% {
+        -webkit-transform: rotateY(180deg);
+    }
+    51% {
+        -webkit-transform: rotateX(0deg);
+    }
+    100% {
+        -webkit-transform: rotateX(180deg);
+    }
+}
+
