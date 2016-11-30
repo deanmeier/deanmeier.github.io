@@ -1,16 +1,80 @@
-/* css animation file */
-@-webkit-keyframes spin {
+/* Animations.css */
+nav ul li:hover {
+    color: #DC3522;
+    cursor: pointer;
+}
+
+
+@-webkit-keyframes img-out {
     0% {
-        -webkit-transform: rotateY(0deg);
+        opacity: 1;
+        z-index: 20;
     }
-    50% {
-        -webkit-transform: rotateY(180deg);
-    }
-    51% {
-        -webkit-transform: rotateX(0deg);
+    99% {
+        opacity: 0;
+        z-index: 20;
     }
     100% {
-        -webkit-transform: rotateX(180deg);
+        opacity: 0;
+        z-index: 1;
     }
 }
+
+
+
+@-webkit-keyframes img-in {
+    0% {
+        opacity: 0;
+        z-index: 1;
+    }
+    1% {
+        opacity: 0;
+        z-index: 20;
+    }
+    100% {
+        opacity: 1;
+        z-index: 20;
+    }
+}
+
+
+
+#btn-1:hover .inner,
+#btn-2:hover .inner,
+#btn-3:hover .inner,
+#btn-4:hover .inner {
+    -webkit-transform: rotate(360deg);
+}
+
+
+
+#email:focus {
+    border-bottom: solid 3px white;
+}
+#subject:focus {
+    border-bottom: solid 3px white;
+}
+#message:focus {
+    border-bottom: solid 3px white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

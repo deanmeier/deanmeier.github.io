@@ -1,188 +1,365 @@
-/* main css file */
+/* Main.css */
+
+/* ~~~~~~~~~~~~~~~~ Universal Styles ~~~~~~~~~~~~~~~~ */
+@font-face {
+    src: url(fonts/Arkhip_font.ttf);
+    font-family: "Arkhip";
+}
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 html, 
 body {
     width: 100%;
     height: 100%;
 }
-body {
-    background-color: white;
+
+/* ~~~~~~~~~~~~~~~~ Navbar Styles ~~~~~~~~~~~~~~~~ */
+nav {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 3;
+    display: flex;
+    align-items: center;
 }
+nav ul {
+    right: 0;
+    position: absolute;
+    margin: auto;
+    margin-right: 10px;
+}
+nav ul li {
+    color: white;
+    display: inline;
+    margin-right: 20px;
+    font-size: 1.5em;
+    font-family: "Arkhip";
+    
+    -webkit-transition: all 0.2s ease;
+}
+
+/* ~~~~~~~~~~~~~~~~ Header Styles ~~~~~~~~~~~~~~~~ */
 header {
     width: 100%;
-    height: 45%;
-    background: url(images/design.jpg) center bottom fixed;
+    height: 100%;
+    background: url(images/mountains.jpg) center center;
     background-size: cover;
+    position: relative;
+    z-index: 1;
 }
-#initials {
-    width: 50px;
-    height: 50px;
-    background-color: #E74C3C;
-    margin: 20px;
-    position: fixed;
-    color: white;
-    font-size: 13pt;
+#header-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #1E1E20;
+    opacity: 0.85;
+    position: absolute;
+}
+header #name {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Poiret One";
-    border: solid 2px white;
-    
-    -webkit-transform: rotate(45deg);
+    position: absolute;
+    font-family: "Arkhip";
+    font-size: 4em;
+    color: white;
 }
-#initials h1 {
-    -webkit-transform: rotate(-45deg);
+#name span {
+    color: #DC3522;
+}
+#header-mountains {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+}
+#header-mountains img {
+    bottom: 0;
+    position: absolute;
+    margin: auto;
 }
 
 
+/* ~~~~~~~~~~~~~~~~ About Styles ~~~~~~~~~~~~~~~~ */
 #about {
     width: 100%;
     height: auto;
     background-color: #1E1E20;
+    padding-bottom: 100px;
 }
-#outer-logo {
-    width: 130px;
-    height: 130px;
-    background-color: #2A2C2B;
-    border: solid 6px #1E1E20;
-    left: 0;
-    right: 0;
-    position: absolute;
-    margin: auto;
-    margin-top: -68px;
-    
-    -webkit-transform: rotate(45deg);
-}
-#logo-container {
-    width: 130px;
-    height: 130px;
-    left: 0;
-    right: 0;
-    position: absolute;
-    margin: auto;
-    
-    -webkit-transform: rotate(-45deg);
-}
-
-#logo-container .square-container {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    margin: auto;
-}
-#logo-container .square {
-    border: solid 2px white;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    margin: auto;
-    
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-#text-container {
-    width: 100%;
-    height: 100%;
-    padding-top: 95px;
-    padding-bottom: 30px;
-}
-#company-name {
-    width: 100%;
-    text-align: center;
+#about p {
     color: white;
-    font-family: "Poiret One";
-    font-size: 3em;
-    margin-bottom: 10px;
-}
-#name {
-    color: #E74C3C;
-} 
-.tiny-bar {
-    width: 150px;
-    height: 2px;
-    background-color: white;
-    left; 0;
-    right: 0;
-    margin: auto;
-    margin-bottom: 5px;
-}
-.short-bar {
-    width: 200px;
-    height: 2px;
-    background-color: white;
+    font-size: 2.3em;
+    width: 60%;
+    font-family: "Arkhip";
     left: 0;
     right: 0;
     margin: auto;
-    margin-bottom: 5px;
-}
-.med-bar {
-    width: 250px;
-    height: 2px;
-    background-color: white;
-    left: 0;
-    right: 0;
-    margin: auto;
-    margin-bottom: 5px;
-}
-.long-bar {
-    width: 300px;
-    height: 2px;
-    background-color: white;
-    left: 0;
-    right: 0;
-    margin: auto;
-    margin-bottom: 5px;
-}
-#subheader {
-    color: white;
-    font-family: "Poiret One";
-    width: 450px;
-    height: auto;
-    left: 0;
-    right: 0;
-    margin: auto;
-    margin-top: 10px;
     text-align: center;
 }
 
 
+
+/* ~~~~~~~~~~~~~~~~ Works Styles ~~~~~~~~~~~~~~~~ */
 #works {
     width: 100%;
-    height: 100%;
+    height: 130%;
+    background: #DC3522;
+    position: relative;
+}
+#works-title{
+    margin-top: -100px; 
+}
+#works h1 {
+    color: white;
+    text-align: center;
+    font-size: 4.5em;
+    font-family: "Arkhip"; 
+}
+.bar1 {
+    width: 300px;
+    height: 2px;
+    background: white;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-bottom: 5px;
+}
+.bar2 {
+    width: 250px;
+    height: 2px;
+    background: white;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-bottom: 40px;
+}
+#gallery {
+    width: 70%;
+    height: 50%;
     background-color: #2A2C2B;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: relative;
+    border: solid 2px white;
+}
+#img-1 {
+    width: 100%;
+    height: 100%;
+    background: url(images/img-1.jpg) center center;
+    background-size: cover;
+    position: absolute;
+    opacity: 1;
+    z-index: 20;
+    
+    -webkit-transition: all 0.3s ease-in-out;
+}
+#img-2 {
+    width: 100%;
+    height: 100%;
+    background: url(images/img-2.jpg) center center;
+    background-size: cover;
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    
+    -webkit-transition: all 0.3s ease-in-out;
+}
+#img-3 {
+    width: 100%;
+    height: 100%;
+    background: url(images/img-3.jpg) center center;
+    background-size: cover;
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    
+    -webkit-transition: all 0.3s ease-in-out;
+}
+#img-4 {
+    width: 100%;
+    height: 100%;
+    background: url(images/img-4.jpg) center center;
+    background-size: cover;
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+#buttons {
+    width: 50px;
+    height: 215px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    margin: auto;
+    z-index: 100;
+    margin-right: 10px;
+}
+#btn-1, 
+#btn-2, 
+#btn-3, 
+#btn-4 {
+    width: 30px;
+    height: 30px;
+    border: solid 2px white;
+    margin: 12px 3px 23px 12px;
+    cursor: pointer;
+    position: relative;
+    
+    -webkit-transform: rotate(45deg);
+}
+#btn-1 .inner {
+    background-color: #DC3522;
+}
+.inner {
+    width: 15px;
+    height: 15px;
+    background: white;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    
+    -webkit-transition: all 0.3s ease-in-out;
+}
+
+
+#works-top {
+    bottom: 0;
+    position: absolute;
+    margin: auto;
+    z-index: 100;
 }
 
 
 
+/* ~~~~~~~~~~~~~~~~ Contact Styles ~~~~~~~~~~~~~~~~ */
+#contact {
+    width: 100%;
+    height: auto;
+    background-color: #1E1E20;
+}
+#contact h1 {
+    color: white;
+    text-align: center;
+    font-size: 4.5em;
+    font-family: "Arkhip"; 
+}
+.bar3 {
+    width: 470px;
+    height: 2px;
+    background: white;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-bottom: 5px;
+}
+.bar4 {
+    width: 420px;
+    height: 2px;
+    background: white;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-bottom: 30px;
+}
 
+#form-container {
+    width: 400px;
+    height: 350px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#email {
+    width: 100%;
+    height: 30px;
+    background-color: #DC3522;
+    border: none;
+    outline: none;
+    margin-bottom: 5px;
+    color: white;
+    padding-left: 5px;
+    font-family: "Arkhip";
+    box-sizing: border-box;
+    
+    -webkit-transition: all 0.1s ease-in-out;
+}
+#subject {
+    width: 100%;
+    height: 30px;
+    background-color: #DC3522;
+    border: none;
+    outline: none;
+    margin-bottom: 5px;
+    color: white;
+    padding-left: 5px;
+    font-family: "Arkhip";
+    box-sizing: border-box;
+    
+    -webkit-transition: all 0.1s ease-in-out;
+}
+#message {
+    width: 100%;
+    background-color: #DC3522;
+    border: none;
+    outline: none;
+    margin-bottom: 5px;
+    color: white;
+    padding-left: 5px;
+    padding-top: 3px;
+    font-family: "Arkhip";
+    box-sizing: border-box;
+    
+    -webkit-transition: all 0.1s ease-in-out;
+}
+::-webkit-input-placeholder {
+   color: rgba(255,255,255,0.7);
+}
 
+:-moz-placeholder { /* Firefox 18- */
+   color: rgba(255,255,255,0.7);  
+}
 
+::-moz-placeholder {  /* Firefox 19+ */
+   color: rgba(255,255,255,0.7);  
+}
 
+:-ms-input-placeholder {  
+   color: rgba(255,255,255,0.7);  
+}
 
+#submit, 
+#reset {
+    width: 60px;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: #DC3522;
+    color: white;
+    font-family: "Arkhip";
+    cursor: pointer;
+}
+#submit:hover,
+#reset:hover {
+    color: #FFD34E;
+}
+#reset {
+    float: right;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ~~~~~~~~~~~~~~~~ Media Query Styles ~~~~~~~~~~~~~~~~ */
 
 
 
