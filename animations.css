@@ -1,1 +1,38 @@
 /* css animation file */
+
+@-webkit-keyframes project-backing {
+  0%, 25% {
+    background: url(images/img-1.jpg) center center;
+  }
+  26%, 50% {
+    background: url(images/img-2.jpg) center right;
+  }
+  51%, 75% {
+    background: url(images/img-3.jpg) center left;
+  }
+  76%, 98% {
+    background: url(images/img-4.jpg) center right;
+  }
+  99%, 100% {
+    background: url(images/img-1.jpg) center center;
+  }
+}
+#top:hover #projects-title-container-1 {
+  -webkit-transform: rotate(225deg);
+}
+#top:hover #projects-title-container-2 {
+  -webkit-transform: rotate(225deg);
+}
+#top:hover #projects-title-container-3 {
+  -webkit-transform: rotate(225deg);
+}
+
+#bottom:hover #blog-title-container-1 {
+  -webkit-transform: rotate(225deg);
+}
+#bottom:hover #blog-title-container-2 {
+  -webkit-transform: rotate(225deg);
+}
+#bottom:hover #blog-title-container-3 {
+  -webkit-transform: rotate(225deg);
+}
